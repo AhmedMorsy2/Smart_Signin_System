@@ -26,7 +26,7 @@ function signIn() {
   }
   if (checkEmailExist()) {
     loginBtn.addEventListener("click", function () {
-      window.location.href = `${location.hostname}/homepage.html`;
+      window.open("homepage.html", "_self");
     });
   } else {
     incorrect.innerHTML =
