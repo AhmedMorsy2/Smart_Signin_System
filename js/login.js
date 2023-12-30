@@ -25,9 +25,7 @@ function signIn() {
     return false;
   }
   if (checkEmailExist()) {
-    loginBtn.addEventListener("click", function () {
-      window.open("homepage.html", "_self");
-    });
+    window.open("homepage.html", "_self");
   } else {
     incorrect.innerHTML =
       '<p class="p-2 text-danger">incorrect email or password</p>';
