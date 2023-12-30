@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Css  -->
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div id="home">
+      <div class="container my-5 text-center">
+        <div class="form w-75 p-5 m-auto text-white">
+          <h1 class="title">Sign up</h1>
+          <div class="name position-relative mb-5">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Enter your name"
+              class="form-control my-4"
+              oninput="checkUserName()"
+            />
+            <div id="layer" class="rounded-3 d-none">
+              Username should be 3 Characters or more
+            </div>
+          </div>
+          <div class="mail position-relative mb-5">
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Enter your mail"
+              class="form-control my-4 position-relative"
+              oninput="checkEmail()"
+            />
+            <div id="layer2" class="rounded-3 d-none">
+              Put a proper e-mail example: ahmed@example.com
+            </div>
+          </div>
+          <div class="password position-relative mb-5">
+            <input
+              type="password"
+              id="passwordInput"
+              placeholder="Enter your password"
+              class="form-control my-4 position-relative"
+              oninput="checkPassword()"
+            />
+            <div id="layer3" class="rounded-3 d-none">
+              Enter a cobination of at least 8 numbers , letters and punctuation
+              marks
+            </div>
+          </div>
+          <p id="outputAlert"></p>
+          <button class="btn w-100 my-2 btn-outline-info" id="signUpBtn">
+            Sign up
+          </button>
+          <p>
+            You have an account ?
+            <a
+              href="index.html"
+              class="text-decoration-none text-white"
+            >
+              Sign In</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="js/signup2.js"></script>
+  </body>
+</html>

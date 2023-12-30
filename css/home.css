@@ -1,0 +1,30 @@
+body{
+    background-color: #24353F;
+    font-family: 'Titillium Web', sans-serif;
+}
+.main-nav{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.contnet{
+    text-align: center;
+    position: absolute;
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #17A2B8;
+    font-size: 2.5rem;
+    
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0 transparent !important;
+}
